@@ -19,11 +19,11 @@ module.exports = function(app) {
 	app.get("/wall", function(req, res) {
 
 		fs.readdir('public/img/uploads', function(err, pics){
-			var user = req.user || null;
+		    var user = req.user || null;
 
-			var imgs = [];
+		    var imgs = [];
 
-			if (err) {
+		    if (err) {
 		        throw err;
 		    }
 
@@ -46,11 +46,10 @@ module.exports = function(app) {
 	app.get("/staticpics", function(req, res) {
 
 		fs.readdir('public/img/uploads', function(err, pics){
-			var user = req.user || null;
 
-			var imgs = [];
+		    var imgs = [];
 
-			if (err) {
+		    if (err) {
 		        throw err;
 		    }
 
