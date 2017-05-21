@@ -144,9 +144,6 @@ $("#toolBar [type=button]").on("click", function(event){
 
 		  var node = document.getElementById('draftLayer');
 
-		  // Add z-index prpoerty so you dont see flicker of repositioning element
-		  node.style.zIndex = "-10";
-
 		
 		$("#draftLayer").css({
 					left: "0",
