@@ -28,6 +28,7 @@ $("#nav span").on("click", function(){
 			// Not necessary to keep listening for events only needed in that state. Removing the 
 			// #draftLayer effectively removes listeners attached to it
 			$("#draftLayer").remove();
+			document.getElementById("backgroundTog").checked = false;
 			$("#toolBar").addClass("hide");
 
 			$(document).off("mousedown");
