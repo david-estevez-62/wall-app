@@ -150,6 +150,10 @@ body {
   cursor: move;
 }
 
+#toolBar [type=image] {
+  width: 20px;
+}
+
 #toolBar input {
   display: block;
   margin: 10px auto;
