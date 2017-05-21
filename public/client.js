@@ -24,11 +24,14 @@ $("#nav span").on("click", function(){
 				return;
 			}
 
+			// make sure the background is switched back to visible if was in hidden state
+			if(document.getElementById("backgroundTog").checked){
+				$("#backgroundTog").trigger("click");
+			}
 			// Remove elements as well as event listeners that are only needed while in "Edit" state. 
 			// Not necessary to keep listening for events only needed in that state. Removing the 
 			// #draftLayer effectively removes listeners attached to it
 			$("#draftLayer").remove();
-			document.getElementById("backgroundTog").checked = false;
 			$("#toolBar").addClass("hide");
 
 			$(document).off("mousedown");
