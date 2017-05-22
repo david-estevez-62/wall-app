@@ -31,8 +31,6 @@ var performLogin = function (req, res, next, user) {
 
     if (err) return next(err);
 
-    // Just end the response here we are going to refresh the page on client
-    // at which point it will get the cookie that authorizes the session
     return res.end();
   });
 };
@@ -55,8 +53,7 @@ module.exports = function(app, passport){
 
         if(err) return next(err);
 
-        // Just end the response here we are going to refresh the page on client
-        // at which point it will get the cookie that authorizes the session
+        
         if(!user) {
           return res.end();
         }
