@@ -347,7 +347,10 @@ function getNewCanvas() {
 		url: '/staticpics',
 	})
 	.done(function(imgs){
-		var currLastImg = parseInt($('#backSetting')[0].lastChild.getAttribute("src").substr(13));
+		var canvasLayer = $('#backSetting')[0];
+
+      		var currLastImg = canvasLayer.children.length > 0 ? 
+                        parseInt(canvasLayer.children[canvasLayer.children.length - 1].getAttribute("src").substr(13)) : 0;
 
 		var domFrag = document.createDocumentFragment();
 
