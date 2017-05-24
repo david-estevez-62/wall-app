@@ -53,10 +53,6 @@ module.exports = function(app, passport){
 
         if(err) return next(err);
 
-        
-        if(!user) {
-          return res.end();
-        }
 
         // If we make it this far, the user has correctly authenticated with passport
         // so now, we'll just log the user in to the system.
