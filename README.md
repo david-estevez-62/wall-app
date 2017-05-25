@@ -14,7 +14,7 @@ git clone https://github.com/ehruska/wall-app.git
 cd wall-app
 npm install
 
-# in new terminal tab #
-sudo mongod 
+
+sudo mongod  #in new terminal tab#
 node server.js
 ```
