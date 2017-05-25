@@ -15,6 +15,6 @@ cd wall-app
 npm install
 
 
-sudo mongod  #in new terminal tab#
+sudo mongod  (in new terminal tab)
 node server.js
 ```
