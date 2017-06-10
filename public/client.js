@@ -190,8 +190,8 @@ $("#loginBlock").delegate("#loginForm", "submit", function(event) {
 	    data[obj.name] = obj.value;
 	});
 
-	$("#loginBlock").removeClass("hide");
-	$("#overlay").removeClass("hide");
+	$("#loginBlock").addClass("hide");
+	$("#overlay").addClass("hide");
 
 
 	var url = state[0] === $("#loginBlock span")[0] ? "/signin" : "/signup";
